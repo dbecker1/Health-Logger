@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDC0A9AE1F159D50004158C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC0A9AD1F159D50004158C9 /* AppDelegate.swift */; };
+		FDC0A9B01F159D50004158C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC0A9AF1F159D50004158C9 /* ViewController.swift */; };
+		FDC0A9B31F159D50004158C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC0A9B11F159D50004158C9 /* Main.storyboard */; };
+		FDC0A9B51F159D50004158C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC0A9B41F159D50004158C9 /* Assets.xcassets */; };
+		FDC0A9B81F159D50004158C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC0A9B61F159D50004158C9 /* LaunchScreen.storyboard */; };
+		FDC0A9C01F15A15A004158C9 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC0A9BF1F15A15A004158C9 /* WeightViewController.swift */; };
+		FDC0A9C41F15A65D004158C9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDC0A9C31F15A65D004158C9 /* HealthKit.framework */; };
+		FDC0A9CB1F15A75B004158C9 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDC0A9C91F15A75B004158C9 /* Interface.storyboard */; };
+		FDC0A9CD1F15A75B004158C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC0A9CC1F15A75B004158C9 /* Assets.xcassets */; };
+		FDC0A9D41F15A75B004158C9 /* Watch Weight Logger Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FDC0A9D31F15A75B004158C9 /* Watch Weight Logger Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FDC0A9DB1F15A75B004158C9 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC0A9DA1F15A75B004158C9 /* InterfaceController.swift */; };
+		FDC0A9DD1F15A75B004158C9 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC0A9DC1F15A75B004158C9 /* ExtensionDelegate.swift */; };
+		FDC0A9DF1F15A75B004158C9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC0A9DE1F15A75B004158C9 /* NotificationController.swift */; };
+		FDC0A9E11F15A75B004158C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDC0A9E01F15A75B004158C9 /* Assets.xcassets */; };
+		FDC0A9E51F15A75B004158C9 /* Watch Weight Logger.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FDC0A9C71F15A75B004158C9 /* Watch Weight Logger.app */; };
+		FDC0A9EF1F171785004158C9 /* WeightInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC0A9EE1F171785004158C9 /* WeightInterfaceController.swift */; };
+		FDF139671F18507D003D4DDB /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF139661F18507D003D4DDB /* HealthKit.framework */; };
+		FDF139691F1855A4003D4DDB /* BloodPressureInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF139681F1855A4003D4DDB /* BloodPressureInterfaceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDC0A9D51F15A75B004158C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDC0A9A21F159D50004158C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDC0A9D21F15A75B004158C9;
+			remoteInfo = "Watch Weight Logger Extension";
+		};
+		FDC0A9E31F15A75B004158C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDC0A9A21F159D50004158C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDC0A9C61F15A75B004158C9;
+			remoteInfo = "Watch Weight Logger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDC0A9E91F15A75B004158C9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FDC0A9D41F15A75B004158C9 /* Watch Weight Logger Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC0A9ED1F15A75B004158C9 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FDC0A9E51F15A75B004158C9 /* Watch Weight Logger.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FDC0A9AA1F159D50004158C9 /* Weight Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weight Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC0A9AD1F159D50004158C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDC0A9AF1F159D50004158C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDC0A9B21F159D50004158C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDC0A9B41F159D50004158C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDC0A9B71F159D50004158C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDC0A9B91F159D50004158C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC0A9BF1F15A15A004158C9 /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
+		FDC0A9C11F15A65D004158C9 /* Weight Logger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Weight Logger.entitlements"; sourceTree = "<group>"; };
+		FDC0A9C31F15A65D004158C9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		FDC0A9C71F15A75B004158C9 /* Watch Weight Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Watch Weight Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC0A9CA1F15A75B004158C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FDC0A9CC1F15A75B004158C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDC0A9CE1F15A75B004158C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC0A9D31F15A75B004158C9 /* Watch Weight Logger Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Weight Logger Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC0A9D91F15A75B004158C9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FDC0A9DA1F15A75B004158C9 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FDC0A9DC1F15A75B004158C9 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FDC0A9DE1F15A75B004158C9 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FDC0A9E01F15A75B004158C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDC0A9E21F15A75B004158C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDC0A9EE1F171785004158C9 /* WeightInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightInterfaceController.swift; sourceTree = "<group>"; };
+		FDF139651F18507D003D4DDB /* Watch Weight Logger Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch Weight Logger Extension.entitlements"; sourceTree = "<group>"; };
+		FDF139661F18507D003D4DDB /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		FDF139681F1855A4003D4DDB /* BloodPressureInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BloodPressureInterfaceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDC0A9A71F159D50004158C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC0A9C41F15A65D004158C9 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC0A9D01F15A75B004158C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDF139671F18507D003D4DDB /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDC0A9A11F159D50004158C9 = {
+			isa = PBXGroup;
+			children = (
+				FDC0A9AC1F159D50004158C9 /* Weight Logger */,
+				FDC0A9C81F15A75B004158C9 /* Watch Weight Logger */,
+				FDC0A9D71F15A75B004158C9 /* Watch Weight Logger Extension */,
+				FDC0A9AB1F159D50004158C9 /* Products */,
+				FDC0A9C21F15A65D004158C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDC0A9AB1F159D50004158C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDC0A9AA1F159D50004158C9 /* Weight Logger.app */,
+				FDC0A9C71F15A75B004158C9 /* Watch Weight Logger.app */,
+				FDC0A9D31F15A75B004158C9 /* Watch Weight Logger Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDC0A9AC1F159D50004158C9 /* Weight Logger */ = {
+			isa = PBXGroup;
+			children = (
+				FDC0A9C11F15A65D004158C9 /* Weight Logger.entitlements */,
+				FDC0A9AD1F159D50004158C9 /* AppDelegate.swift */,
+				FDC0A9AF1F159D50004158C9 /* ViewController.swift */,
+				FDC0A9B11F159D50004158C9 /* Main.storyboard */,
+				FDC0A9B41F159D50004158C9 /* Assets.xcassets */,
+				FDC0A9B61F159D50004158C9 /* LaunchScreen.storyboard */,
+				FDC0A9B91F159D50004158C9 /* Info.plist */,
+				FDC0A9BF1F15A15A004158C9 /* WeightViewController.swift */,
+			);
+			path = "Weight Logger";
+			sourceTree = "<group>";
+		};
+		FDC0A9C21F15A65D004158C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDF139661F18507D003D4DDB /* HealthKit.framework */,
+				FDC0A9C31F15A65D004158C9 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDC0A9C81F15A75B004158C9 /* Watch Weight Logger */ = {
+			isa = PBXGroup;
+			children = (
+				FDC0A9C91F15A75B004158C9 /* Interface.storyboard */,
+				FDC0A9CC1F15A75B004158C9 /* Assets.xcassets */,
+				FDC0A9CE1F15A75B004158C9 /* Info.plist */,
+			);
+			path = "Watch Weight Logger";
+			sourceTree = "<group>";
+		};
+		FDC0A9D71F15A75B004158C9 /* Watch Weight Logger Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDF139651F18507D003D4DDB /* Watch Weight Logger Extension.entitlements */,
+				FDC0A9DA1F15A75B004158C9 /* InterfaceController.swift */,
+				FDC0A9DC1F15A75B004158C9 /* ExtensionDelegate.swift */,
+				FDC0A9DE1F15A75B004158C9 /* NotificationController.swift */,
+				FDC0A9E01F15A75B004158C9 /* Assets.xcassets */,
+				FDC0A9E21F15A75B004158C9 /* Info.plist */,
+				FDC0A9D81F15A75B004158C9 /* Supporting Files */,
+				FDC0A9EE1F171785004158C9 /* WeightInterfaceController.swift */,
+				FDF139681F1855A4003D4DDB /* BloodPressureInterfaceController.swift */,
+			);
+			path = "Watch Weight Logger Extension";
+			sourceTree = "<group>";
+		};
+		FDC0A9D81F15A75B004158C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDC0A9D91F15A75B004158C9 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDC0A9A91F159D50004158C9 /* Weight Logger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDC0A9BC1F159D50004158C9 /* Build configuration list for PBXNativeTarget "Weight Logger" */;
+			buildPhases = (
+				FDC0A9A61F159D50004158C9 /* Sources */,
+				FDC0A9A71F159D50004158C9 /* Frameworks */,
+				FDC0A9A81F159D50004158C9 /* Resources */,
+				FDC0A9ED1F15A75B004158C9 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDC0A9E41F15A75B004158C9 /* PBXTargetDependency */,
+			);
+			name = "Weight Logger";
+			productName = "Weight Logger";
+			productReference = FDC0A9AA1F159D50004158C9 /* Weight Logger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDC0A9C61F15A75B004158C9 /* Watch Weight Logger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDC0A9EA1F15A75B004158C9 /* Build configuration list for PBXNativeTarget "Watch Weight Logger" */;
+			buildPhases = (
+				FDC0A9C51F15A75B004158C9 /* Resources */,
+				FDC0A9E91F15A75B004158C9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDC0A9D61F15A75B004158C9 /* PBXTargetDependency */,
+			);
+			name = "Watch Weight Logger";
+			productName = "Watch Weight Logger";
+			productReference = FDC0A9C71F15A75B004158C9 /* Watch Weight Logger.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FDC0A9D21F15A75B004158C9 /* Watch Weight Logger Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDC0A9E61F15A75B004158C9 /* Build configuration list for PBXNativeTarget "Watch Weight Logger Extension" */;
+			buildPhases = (
+				FDC0A9CF1F15A75B004158C9 /* Sources */,
+				FDC0A9D01F15A75B004158C9 /* Frameworks */,
+				FDC0A9D11F15A75B004158C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Weight Logger Extension";
+			productName = "Watch Weight Logger Extension";
+			productReference = FDC0A9D31F15A75B004158C9 /* Watch Weight Logger Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDC0A9A21F159D50004158C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Daniel Becker";
+				TargetAttributes = {
+					FDC0A9A91F159D50004158C9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7627F8X2FM;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					FDC0A9C61F15A75B004158C9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7627F8X2FM;
+						ProvisioningStyle = Automatic;
+					};
+					FDC0A9D21F15A75B004158C9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7627F8X2FM;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FDC0A9A51F159D50004158C9 /* Build configuration list for PBXProject "Weight Logger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDC0A9A11F159D50004158C9;
+			productRefGroup = FDC0A9AB1F159D50004158C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDC0A9A91F159D50004158C9 /* Weight Logger */,
+				FDC0A9C61F15A75B004158C9 /* Watch Weight Logger */,
+				FDC0A9D21F15A75B004158C9 /* Watch Weight Logger Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDC0A9A81F159D50004158C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC0A9B81F159D50004158C9 /* LaunchScreen.storyboard in Resources */,
+				FDC0A9B51F159D50004158C9 /* Assets.xcassets in Resources */,
+				FDC0A9B31F159D50004158C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC0A9C51F15A75B004158C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC0A9CD1F15A75B004158C9 /* Assets.xcassets in Resources */,
+				FDC0A9CB1F15A75B004158C9 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC0A9D11F15A75B004158C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC0A9E11F15A75B004158C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDC0A9A61F159D50004158C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC0A9C01F15A15A004158C9 /* WeightViewController.swift in Sources */,
+				FDC0A9B01F159D50004158C9 /* ViewController.swift in Sources */,
+				FDC0A9AE1F159D50004158C9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDC0A9CF1F15A75B004158C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC0A9DF1F15A75B004158C9 /* NotificationController.swift in Sources */,
+				FDF139691F1855A4003D4DDB /* BloodPressureInterfaceController.swift in Sources */,
+				FDC0A9DD1F15A75B004158C9 /* ExtensionDelegate.swift in Sources */,
+				FDC0A9EF1F171785004158C9 /* WeightInterfaceController.swift in Sources */,
+				FDC0A9DB1F15A75B004158C9 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDC0A9D61F15A75B004158C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDC0A9D21F15A75B004158C9 /* Watch Weight Logger Extension */;
+			targetProxy = FDC0A9D51F15A75B004158C9 /* PBXContainerItemProxy */;
+		};
+		FDC0A9E41F15A75B004158C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDC0A9C61F15A75B004158C9 /* Watch Weight Logger */;
+			targetProxy = FDC0A9E31F15A75B004158C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDC0A9B11F159D50004158C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDC0A9B21F159D50004158C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDC0A9B61F159D50004158C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDC0A9B71F159D50004158C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FDC0A9C91F15A75B004158C9 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDC0A9CA1F15A75B004158C9 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDC0A9BA1F159D50004158C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDC0A9BB1F159D50004158C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDC0A9BD1F159D50004158C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Weight Logger/Weight Logger.entitlements";
+				DEVELOPMENT_TEAM = 7627F8X2FM;
+				INFOPLIST_FILE = "Weight Logger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Weight-Logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FDC0A9BE1F159D50004158C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Weight Logger/Weight Logger.entitlements";
+				DEVELOPMENT_TEAM = 7627F8X2FM;
+				INFOPLIST_FILE = "Weight Logger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Weight-Logger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FDC0A9E71F15A75B004158C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Watch Weight Logger Extension/Watch Weight Logger Extension.entitlements";
+				DEVELOPMENT_TEAM = 7627F8X2FM;
+				INFOPLIST_FILE = "Watch Weight Logger Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Weight-Logger.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		FDC0A9E81F15A75B004158C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "Watch Weight Logger Extension/Watch Weight Logger Extension.entitlements";
+				DEVELOPMENT_TEAM = 7627F8X2FM;
+				INFOPLIST_FILE = "Watch Weight Logger Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Weight-Logger.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		FDC0A9EB1F15A75B004158C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7627F8X2FM;
+				IBSC_MODULE = Watch_Weight_Logger_Extension;
+				INFOPLIST_FILE = "Watch Weight Logger/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Weight-Logger.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		FDC0A9EC1F15A75B004158C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7627F8X2FM;
+				IBSC_MODULE = Watch_Weight_Logger_Extension;
+				INFOPLIST_FILE = "Watch Weight Logger/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.self.Weight-Logger.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDC0A9A51F159D50004158C9 /* Build configuration list for PBXProject "Weight Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC0A9BA1F159D50004158C9 /* Debug */,
+				FDC0A9BB1F159D50004158C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDC0A9BC1F159D50004158C9 /* Build configuration list for PBXNativeTarget "Weight Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC0A9BD1F159D50004158C9 /* Debug */,
+				FDC0A9BE1F159D50004158C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDC0A9E61F15A75B004158C9 /* Build configuration list for PBXNativeTarget "Watch Weight Logger Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC0A9E71F15A75B004158C9 /* Debug */,
+				FDC0A9E81F15A75B004158C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDC0A9EA1F15A75B004158C9 /* Build configuration list for PBXNativeTarget "Watch Weight Logger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDC0A9EB1F15A75B004158C9 /* Debug */,
+				FDC0A9EC1F15A75B004158C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDC0A9A21F159D50004158C9 /* Project object */;
+}

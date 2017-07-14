@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Weight Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="WeightInterfaceController" customModule="Watch_Weight_Logger_Extension">
+                    <items>
+                        <label alignment="left" text="Weight" id="LWT-KV-dYY"/>
+                        <group width="1" alignment="left" id="5cl-Y3-TeQ">
+                            <items>
+                                <picker width="70" height="50" alignment="left" id="u3t-AQ-dUI">
+                                    <connections>
+                                        <action selector="integerDidChange:" destination="AgC-eL-Hgc" id="Rn1-jC-zJ6"/>
+                                    </connections>
+                                </picker>
+                                <label height="1" alignment="left" text="." id="sCS-tB-tAC"/>
+                                <picker width="44" height="50" alignment="left" id="bgn-7y-n8o">
+                                    <connections>
+                                        <action selector="decimalDidChange:" destination="AgC-eL-Hgc" id="XyW-e6-rMo"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Submit" id="3j2-We-p3O">
+                            <connections>
+                                <action selector="submit" destination="AgC-eL-Hgc" id="cmA-yh-hE8"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Message" id="TzQ-B6-dTv"/>
+                    </items>
+                    <connections>
+                        <outlet property="decimalPicker" destination="bgn-7y-n8o" id="09a-Cc-A1x"/>
+                        <outlet property="integerPicker" destination="u3t-AQ-dUI" id="ID0-gU-RtP"/>
+                        <outlet property="message" destination="TzQ-B6-dTv" id="Pij-8W-gRy"/>
+                        <segue destination="Krq-Yz-grr" kind="relationship" relationship="nextPage" id="dGB-lZ-cE7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="343"/>
+        </scene>
+        <!--Blood Pressure Interface Controller-->
+        <scene sceneID="cRc-Vf-Fb5">
+            <objects>
+                <controller id="Krq-Yz-grr" customClass="BloodPressureInterfaceController" customModule="Watch_Weight_Logger_Extension">
+                    <items>
+                        <label alignment="left" text="Blood Pressure" id="6yk-hm-u0h"/>
+                        <group width="1" alignment="left" id="W7i-Ub-pe5">
+                            <items>
+                                <picker width="57" height="50" alignment="left" id="Rgo-zs-B4z">
+                                    <connections>
+                                        <action selector="systolicDidChange:" destination="Krq-Yz-grr" id="zAn-H4-eOE"/>
+                                    </connections>
+                                </picker>
+                                <label height="1" alignment="left" text="/" id="z5h-XM-TCV"/>
+                                <picker width="57" height="50" alignment="left" id="Ulo-zE-5Qg">
+                                    <connections>
+                                        <action selector="diastolicDidChange:" destination="Krq-Yz-grr" id="uHU-Es-f58"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Submit" id="yih-eb-D5Z">
+                            <connections>
+                                <action selector="submit" destination="Krq-Yz-grr" id="MXm-U6-2D6"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Message" id="2Mt-FO-3O4"/>
+                    </items>
+                    <connections>
+                        <outlet property="diastolicPicker" destination="Ulo-zE-5Qg" id="PL7-fo-QEU"/>
+                        <outlet property="message" destination="2Mt-FO-3O4" id="i6U-lv-sN6"/>
+                        <outlet property="systolicPicker" destination="Rgo-zs-B4z" id="bpS-d0-1CY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="486" y="343"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Watch_Weight_Logger" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
